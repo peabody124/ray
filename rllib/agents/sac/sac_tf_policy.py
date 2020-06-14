@@ -49,7 +49,7 @@ def build_sac_model(policy, obs_space, action_space, config):
         # No state preprocessor: fcnet_hiddens should be empty.
         if config["model"]["fcnet_hiddens"]:
             logger.warning(
-                "When not using a state-preprocessor with SAC, `fcnet_hiddens`"
+                "When not using a state-preprocessor with SAC, `model.fcnet_hiddens`"
                 " will be set to an empty list! Any hidden layer sizes are "
                 "defined via `policy_model.hidden_layer_sizes` and "
                 "`Q_model.hidden_layer_sizes`.")
